@@ -1,22 +1,15 @@
 # [nodejs] Server
-Aplicação em nodejs para demonstração de uma API.
+Aplicação em nodejs para demonstração de uma API .
 
-## Tecnologias utilizadas
- - nodemon
- ```bash
-$ npm i nodemon
-```
- - express
- ```bash
-$ npm i --save express
-```
-
-- Sqlite3
- ```bash
-$ npm i --save sqlite3
-```
+## Dependencies
+    "body-parser": "^1.19.0",
+    "config": "^3.2.3",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+ 
 ## Inicialização
 
  ```bash
 $ nodemon server.js
 ```
+
