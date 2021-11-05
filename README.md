@@ -15,3 +15,8 @@ $ npm i --save express
  ```bash
 $ npm i --save sqlite3
 ```
+## Inicialização
+
+ ```bash
+$ nodemon server.js
+```
