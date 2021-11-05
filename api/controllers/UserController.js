@@ -1,6 +1,4 @@
 
-const { stringify } = require('querystring'); 
-
 module.exports = () => {
   const _bo = require('../bo/UserBO');
   const controller = {};
@@ -18,9 +16,12 @@ module.exports = () => {
     _bo
       .save(req.body)
       .then(r => res.status(200).json(r))
-      .catch(e => res.status(500).json({status:
-        {sucess: '0',
-         message:e }
+      .catch(e => res.status(500).json(
+        {status:
+          {
+            sucess: '0',
+            message:e 
+          }
     }));
   };
 
