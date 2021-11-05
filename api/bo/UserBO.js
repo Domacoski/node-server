@@ -1,4 +1,3 @@
- 
 const { status } = require('../entities/Status');
 const { validateUser } = require('./utils/UserUtils');
 
@@ -21,7 +20,7 @@ exports.byId = function(id){
 };
 
 exports.save = function(user){
-    return  new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         let valid = validateUser(user);
         if(valid.sucess){
             require('../dao/UserDAO')
